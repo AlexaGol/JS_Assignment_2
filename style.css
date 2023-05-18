@@ -1,0 +1,129 @@
+
+/* Inputs */
+.input {
+    background-color: #ffffff;
+    width: fit-content;
+    height: 15px;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #ff90e8;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .input:focus {
+    color: #ff90e8;
+    background-color: #ffffff;
+    outline-color: #ff90e8;
+    box-shadow: -3px -3px 15px #ff90e8;
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+  /* Buttons */
+  .button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    width: fit-content;
+  }
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+/* Radio buttons */
+.radio-inputs {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 8px;
+    width: 300px;
+    font-size: 12px;
+    margin: 10px 0px 10px 0px;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 5px;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #ff90e8;
+    font-weight: 600;
+  }
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1.5px;
+    font-size: 50px;
+}  
+h3{
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+}
+form {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    width:fit-content;
+    margin: 10px;
+}
+
+p{
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+}
+#hidden{
+  display: none;
+  margin-top: 15px;
+  font-family: inherit;
+  border: none;
+  outline: 1px dotted rgb(37, 37, 37);
+  outline-offset: -4px;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+
+* {
+ justify-content: center;
+}
+

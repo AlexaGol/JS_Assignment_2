@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>JavaScript Excersizes</title>
+</head>
+<body>
+    <h1>JavaScript Excersizes</h1>
+    <!-- Excersize 1 -->
+    <div class="exce1">
+        <form>
+            <h3>1. Lets check if this number is even</h3>
+            <input placeholder="Enter a number" class="input" id="n1" name="text" type="text">
+            <button class="button" onclick="checkEven(event)">Submit</button>
+            <p id="result1"></p>
+        </form>
+    </div>
+
+    <!-- Excersize 2 -->
+    <div class="exce2">
+        <form>
+            <h3>2. Lets check the average of these numbers</h3>
+            <input placeholder="Enter a number" class="input" id="n2" name="text" type="text">
+            <input placeholder="Enter a number" class="input" id="n3" name="text" type="text">
+            <input placeholder="Enter a number" class="input" id="n4" name="text" type="text">
+            <button class="button" onclick="checkAvg(event)">Submit</button>
+            <p id="result2"></p>
+        </form>
+    </div>
+
+    <!-- Excersize 3 -->
+    <div class="exce3">
+        <form>
+            <h3>3. Lets see who won</h3>
+            <p>Please enter players names & their scores</p>
+            <input placeholder="Enter player 1" class="input" id="name1" name="text" type="text">
+            <input placeholder="Enter score player 1" class="input" id="score1" name="text" type="text">
+            <br>
+            <input placeholder="Enter player 2" class="input" id="name2" name="text" type="text">
+            <input placeholder="Enter score player 2" class="input" id="score2" name="text" type="text">
+            <button class="button" onclick="whoWon(event)">Submit</button>
+            <p id="result3"></p>
+        </form>
+    </div>
+
+    <!-- Excersize 4 -->
+    <div class="exce4">
+        <form>
+            <h3>4. Check the time</h3>
+            <p>Please enter the time</p>
+            <input placeholder="Enter the time" class="input" id="time" name="text" type="text">
+            <button class="button" onclick="checkTime(event)">Submit</button>
+            <p id="result4"></p>
+        </form>
+    </div>
+
+     <!-- Excersize 5 -->
+     <div class="exce5">
+        <form>
+            <h3>5. Train operational feasibility</h3>
+            <p>Let's check trains revenue, please fill in the fileds</p>
+            <input placeholder="Number of wagons" class="input" id="numOfWag" name="text" type="text">
+            <div class="radio-inputs">
+                <label class="radio">
+                  <input type="radio" name="radio" checked="" value="Morning">
+                  <span class="name">Morning</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="radio" value="Noon">
+                  <span class="name">Noon</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="radio" value="Evening">
+                  <span class="name">Evening</span>
+                </label>
+              </div>
+            <input placeholder="Operator salary" class="input" id="salary" name="text" type="text">
+            <button class="button" onclick="train(event)">Submit</button>
+            <p id="result5"></p>
+        </form>
+    </div>
+
+        <!-- Excersize 6 -->
+        <div class="exce6">
+            <form>
+                <h3>6. Car cost</h3>
+                <p>Let's check car cost after 5% discount & each payment</p>
+                <input placeholder="Enter car full price" class="input" id="price"name="text" type="text">
+                <input placeholder="Wanted number of payments" class="input" id="payment" name="text" type="text">
+                <button class="button" onclick="toyota(event)">Submit</button>
+                <p id="result6"></p>
+                <p id="result6b"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 7 -->
+        <div class="exce7">
+            <form>
+                <h3>7. Jerusalem to TLV</h3>
+                <p>Please enter the number of passengers waiting at the stop</p>
+                <input placeholder="Number of passengers" class="input" id="passengers"name="text" type="text">
+                <button class="button" onclick="taxi(event)">Submit</button>
+                <p id="result7"></p>
+                <p id="result7b"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 8 -->
+        <div class="exce8">
+            <form>
+                <h3>8. Field trip preparation</h3>
+                <p>Please enter the number of students attendint the trip</p>
+                <input placeholder="Number of students" id="studNum" class="input" name="text" type="text">
+                <button class="button" onclick="fieldTrip(event)">Submit</button>
+                <p id="result8"></p>
+                <p id="result8b"></p>
+                <p id="result8c"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 9 -->
+        <div class="exce9">
+            <form>
+                <h3>9. Thursday, thursday or 5</h3>
+                <input placeholder="Please enter the day" class="input" id="in"name="text" type="text">
+                <button class="button" onclick="checkThursday(event)">Submit</button>
+                <p id="result9"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 10 -->
+        <div class="exce10">
+            <form>
+                <h3>10. BMI Calculator</h3>
+                <input placeholder="Please enter your BMI" class="input" id="bmi"name="text" type="text">
+                <button class="button" onclick="checkBmi(event)">Submit</button>
+                <p id="result10"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 11 -->
+        <div class="exce11">
+            <form>
+                <h3>11. Who's correct?</h3>
+                <input placeholder="Please enter a text" class="input" id="in2" name="text" type="text">
+                <button class="button" onclick="whosCorrect(event)">Submit</button>
+                <p id="result11"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 12 -->
+        <div class="exce12">
+            <form>
+                <h3>12. Root of 100</h3>
+                <button class="button" onclick="root(event)">Check</button>
+                <p id="result12"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 13 -->
+        <div class="exce13">
+            <form>
+                <h3>13. There's a hidden button</h3>
+                <button class="button" onclick="findButton(event)">Find</button>
+                <button class="button1" id="hidden">I was hidden</button>
+            </form>
+        </div>
+
+        <!-- Excersize 14 -->
+        <div class="exce14">
+            <form>
+                <h3>14. Lets open a new page</h3>
+                <button class="button" onclick="openWin(event)">Open</button>
+            </form>
+        </div>
+
+        <!-- Excersize 15 -->
+        <div class="exce15">
+            <form>
+                <h3>15. Let's check the Date & Time</h3>
+                <button class="button" onclick="showDate(event)">Show me</button>
+                <p id="result15"></p>
+            </form>
+        </div>
+    
+        <!-- Excersize 16 -->
+        <div class="exce16">
+            <form>
+                <h3>16. Enter a number between 1 & 10</h3>
+                <input placeholder="Please enter number" class="input" id="num6" name="text" type="text">
+                <button class="button" onclick="printHello(event)">Submit</button>
+                <p id="result16"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 17 -->
+        <div class="exce17">
+            <form>
+                <h3>17. Repeat</h3>
+                <input placeholder="Please enter something" class="input" id="in3"name="text" type="text">
+                <button class="button" onclick="repeat(event)">Submit</button>
+                <p id="result17"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 18 -->
+        <div class="exce18">
+            <form>
+                <h3>18. Which is bigger?</h3>
+                <input placeholder="Please enter 1st number" class="input" id="num7"name="text" type="text">
+                <input placeholder="Please enter 2nd number" class="input" id="num8"name="text" type="text">
+                <button class="button" onclick="whosBiggerAlert(event)">Submit</button>
+                <p id="result18"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 19 -->
+        <div class="exce19">
+            <form>
+                <h3>19. How much should i tip?</h3>
+                <input placeholder="Please enter cost" class="input" id="mealCost" name="text" type="text">
+                <input placeholder="Please enter % of tip" class="input" id="tip" name="text" type="text">
+                <button class="button" onclick="tipCalc(event)">Submit</button>
+                <p id="result19"></p>
+                <p id="result19b"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 20 -->
+        <div class="exce20">
+            <form>
+                <h3>20. Make it bigger or smaller</h3>
+                <p id="result20">0</p>
+                <button class="button" onclick="increment(event)">+</button>
+                <button class="button" onclick="decrement(event)">-</button>
+                <button class="button" onclick="resetFunc(event) ">Reset</button>
+            </form>
+        </div>
+
+        <!-- Excersize 21 -->
+        <div class="exce21">
+            <form>
+                <h3>21. Here's a quote for you</h3>
+                <p id="result21"></p>
+            </form>
+        </div>
+
+        <!-- Excersize 22 -->
+        <div class="exce22">
+            <form>
+                <h3>22. Student Names</h3>
+                <p id="result22"></p>
+                <button class="button" onclick="studentNames(event)">Click</button>
+            </form>
+        </div>
+
+        <!-- Excersize 23 -->
+        <div class="exce23">
+            <form>
+                <h3>23. Submit a book to the inventory</h3>
+                <input placeholder="Please enter a Book Name" class="input" id="bookName" name="text" type="text">
+                <p id="result23"></p>
+                <button class="button" onclick="bookList(event)">Submit</button>
+                <button class="button" onclick="bShow(event)">Show List</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
