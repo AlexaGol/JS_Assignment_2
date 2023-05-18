@@ -73,14 +73,14 @@ function train(event) {
     for (i = 0; i < radio.length; i++) {
         if (radio[i].checked && radio[i].value =="Morning"){
             document.getElementById("result5").innerHTML
-                = (((num5 * 120) * 6.60) * 0.17) - salary}
+                = (((num5 * 120) * 6.60) * 0.83) - salary}
         else if(radio[i].checked && radio[i].value =="Noon"){
             document.getElementById("result5").innerHTML
-                    = (((num5 * 108) * 6.60) * 0.17) - salary
+                    = (((num5 * 108) * 6.60) * 0.83) - salary
         }
         else if(radio[i].checked && radio[i].value =="Evening"){
             document.getElementById("result5").innerHTML
-                    = (((num5 * 84) * 6.60) * 0.17) - salary
+                    = (((num5 * 84) * 6.60) * 0.83) - salary
         }
     } 
     event.preventDefault();
